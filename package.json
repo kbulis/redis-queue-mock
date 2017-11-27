@@ -1,0 +1,31 @@
+{
+  "name": "redis-queue-mock",
+  "version": "1.0.1",
+  "description": "Very lightweight redis mock for simple queuing and eventing use cases.",
+  "keywords": [
+    "redis",
+    "queue",
+    "mock"
+  ],
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "tsc",
+    "test": "mocha --recursive test/**/*.spec.ts"
+  },
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "author": "Kirk Bulis <kirk.d.bulis@gmail.com> (https://github.com/kbulis)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbulis/redis-queue-mock.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.5",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}
