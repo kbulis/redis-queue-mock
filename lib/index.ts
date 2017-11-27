@@ -243,7 +243,7 @@ class RedisQueueMockClient implements RedisClient {
  * @returns
  * Initialized, mock queue client.
  */
-export function createClient(connect: string): RedisClient {
+export function createClient(connect: string = ''): RedisClient {
   if (connect.startsWith('mocks://') === true) {
     for (const store of RedisQueueMockStored.stores) {
       if (store.connect === connect) {
